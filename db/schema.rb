@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_064552) do
     t.datetime "date"
     t.bigint "user_id", null: false
     t.bigint "request_id", null: false
-    t.string "status"
+    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["request_id"], name: "index_bookings_on_request_id"
