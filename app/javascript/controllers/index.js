@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import ClickableCardController from "./clickable_card_controller"
+application.register("clickable-card", ClickableCardController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)

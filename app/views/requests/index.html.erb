@@ -4,21 +4,7 @@
     <div class="col-10 offset-1">
       <div class="cards">
         <% @requests.each do |request| %>
-          <div class="card">
-            <div class="card-top">
-              <p><%= request.user.first_name %> <%= request.user.last_name.first %>.</p>
-              <p><%= request.user.address %></p>
-            </div>
-            <div class="card-content">
-              <%= link_to request_path(request) do %>
-                <h4><%= request.title %></h4>
-              <% end %>
-              <p><%= request.description.first(150) %></p>
-            </div>
-            <div class="card-details">
-              <p><%= request.price %></p>
-            </div>
-          </div>
+          <%= render 'request_card', request: request %>
         <% end %>
       </div>
     </div>

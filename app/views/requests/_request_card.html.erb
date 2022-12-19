@@ -1,0 +1,18 @@
+<div class="card-request" data-controller="clickable-card" data-clickable-card-id-value="<%= request.id %>" data-action="click->clickable-card#click">
+  <div class="card-request-user">
+    <%= image_tag 'https://i.pravatar.cc/40', class: 'avatar-large' %>
+    <div class="card-request-user-details">
+      <p class="card-request-user-name"><%= request.user.first_name %> <%= request.user.last_name.first %>.</p>
+      <p class="card-request-date">Créée le <%= request.created_at %></p>
+      <p class="card-request-user-address"><%= request.user.address %></p>
+    </div>
+  </div>
+  <div class="card-request-content">
+    <h3><%= request.title %></h3>
+    <p><%= request.description %></p>
+  </div>
+  <div class="card-request-footer">
+    <p class="card-request-category"><%= request.request_category.category.name %></p>
+    <p class="card-request-price"><%= request.price %>€ minimum</p>
+  </div>
+</div>
