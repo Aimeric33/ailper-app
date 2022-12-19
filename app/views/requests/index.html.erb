@@ -10,7 +10,9 @@
               <p><%= request.user.address %></p>
             </div>
             <div class="card-content">
-              <h4><%= request.title %></h4>
+              <%= link_to request_path(request) do %>
+                <h4><%= request.title %></h4>
+              <% end %>
               <p><%= request.description.first(150) %></p>
             </div>
             <div class="card-details">
