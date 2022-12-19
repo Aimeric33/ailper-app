@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="text-center">Toutes les annonces</h1>
+  <div class="row">
+    <div class="col-10 offset-1">
+      <div class="cards">
+        <% @requests.each do |request| %>
+          <div class="card">
+            <div class="card-top">
+              <p><%= request.user.first_name %> <%= request.user.last_name.first %>.</p>
+              <p><%= request.user.address %></p>
+            </div>
+            <div class="card-content">
+              <h4><%= request.title %></h4>
+              <p><%= request.description.first(150) %></p>
+            </div>
+            <div class="card-details">
+              <p><%= request.price %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
