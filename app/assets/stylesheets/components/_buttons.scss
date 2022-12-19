@@ -1,0 +1,42 @@
+.cta-blue {
+  display: inline-block;
+  background-color: $blue;
+  color: $white;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+    background-color: $blue-hover;
+  }
+}
+
+.cta-white {
+  display: inline-block;
+  background-color: $white;
+  color: $blue;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+    background-color: $white-hover;
+  }
+}
+
+.link-white {
+  display: inline-block;
+  color: $white;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+}

@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="banner-content">
+    <h1>Un problème d'ordinateur, de smartphone ou d'imprimante ?</h1>
+    <p>Postez une annonce qui décrit votre problème et recevez de l'aide rapidement grâce à un expert Ailper</p>
+    <div class="banner-buttons">
+      <%= link_to 'Je crée une annonce', new_request_path, class: 'cta-white' %>
+      <%= link_to 'Comment ça marche ?', '#', class: 'link-white' %>
+    </div>
+  </div>
+  <div class="banner-image">
+    <%= image_tag 'banner-img.png' %>
+  </div>
+</div>
