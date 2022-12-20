@@ -1,0 +1,14 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  background-color: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.banner-content {
+  color: $white;
+  width: 48%;
+}
