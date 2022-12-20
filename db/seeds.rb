@@ -53,6 +53,34 @@ puts "Users created 🟢"
 puts "-----------------"
 
 puts "-----------------"
+puts "Creating categories ▶️"
+puts "-----------------"
+
+Category.create(
+  name: "Ordinateurs",
+  photo: "https://images.unsplash.com/photo-1594975960347-741e85f3e8ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+)
+
+Category.create(
+  name: "Smartphones",
+  photo: "https://images.unsplash.com/photo-1573798741449-ab9612aba291?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+)
+
+Category.create(
+  name: "Imprimantes",
+  photo: "https://images.pexels.com/photos/7014415/pexels-photo-7014415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+)
+
+Category.create(
+  name: "Objets connectés",
+  photo: "https://images.pexels.com/photos/4790257/pexels-photo-4790257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+)
+
+puts "-----------------"
+puts "Categories created 🟢"
+puts "-----------------"
+
+puts "-----------------"
 puts "Creating requests ▶️"
 puts "-----------------"
 
@@ -86,6 +114,34 @@ Request.create(
 
 puts "-----------------"
 puts "Requests created 🟢"
+puts "-----------------"
+
+puts "-----------------"
+puts "Creating requests' categories ▶️"
+puts "-----------------"
+
+RequestCategory.create(
+  request: Request.first,
+  category: Category.third
+)
+
+RequestCategory.create(
+  request: Request.second,
+  category: Category.second
+)
+
+RequestCategory.create(
+  request: Request.third,
+  category: Category.first
+)
+
+RequestCategory.create(
+  request: Request.fourth,
+  category: Category.first
+)
+
+puts "-----------------"
+puts "Requests' categories created 🟢"
 puts "-----------------"
 
 puts "-----------------"
