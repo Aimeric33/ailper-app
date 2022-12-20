@@ -1,0 +1,77 @@
+.last-requests-block {
+  padding: 0px 100px 40px 100px;
+
+
+  h2 {
+    color: $blue;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+.card-request {
+  height: 225px;
+  border-radius: $border-radius;
+  box-shadow: 0 6px 10px rgba($color: $black, $alpha: 0.1);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card-request-user {
+  display: flex;
+  align-items: center;
+}
+
+.card-request-user-details {
+  margin-left: 1rem;
+
+  .card-request-user-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .card-request-date, .card-request-user-address {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+}
+
+.card-request-content {
+  margin-top: 0.5rem;
+  flex-grow: 1;
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.card-request-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .card-request-category {
+    margin: 0;
+    color: $white;
+    background-color: $blue;
+    padding: 2px 8px;
+    border-radius: $border-radius;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  .card-request-price {
+    margin: 0;
+    color: $blue;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+}

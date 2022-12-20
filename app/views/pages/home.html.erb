@@ -11,3 +11,23 @@
     <%= image_tag 'banner-img.png' %>
   </div>
 </div>
+
+<div class="categories-block">
+  <h2>Les catégories les plus fréquentes</h2>
+  <div class="cards-grid-categories">
+    <% @categories.each do |category| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= category.photo %>)">
+        <%= link_to category.name, '#', class: 'cta-blue' %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="last-requests-block">
+  <h2>Les dernières annonces</h2>
+  <div class="cards-grid-requests">
+    <% @requests.each do |request| %>
+      <%= render 'requests/request_card', request: request %>
+    <% end %>
+  </div>
+</div>
