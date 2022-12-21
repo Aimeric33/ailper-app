@@ -15,8 +15,12 @@ class RequestsController < ApplicationController
   def create
     @request = Request.new(request_params)
     @request.user = current_user
+    @request_category = RequestCategory.new(
+      category: Category.find(params[:request][:category_ids].to_i),
+      request: @request
+    )
 
-    if @request.save
+    if @request.save && @request_category.save
       redirect_to request_path(@request)
     else
       render :new, status: :unprocessable_entity
