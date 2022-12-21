@@ -16,7 +16,7 @@
   padding: 24px 16px;
   background-color: $white;
   border-radius: $border-radius;
-  box-shadow: 0 6px 10px rgba($color: $black, $alpha: 0.1);
+  box-shadow: 0 0px 10px rgba($color: $black, $alpha: 0.1);
 
   label:not(.form-check-label), legend {
     color: $blue;
@@ -27,4 +27,17 @@
 .form-price-categories {
   display: flex;
   justify-content: space-between;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid rgba($color: $blue, $alpha: 0.3);
+  border-radius: 0;
+  padding-right: 0;
+  padding-left: 0;
+
+  &:focus {
+    box-shadow: none;
+    border-color: $blue;
+  }
 }

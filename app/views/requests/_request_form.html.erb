@@ -1,0 +1,11 @@
+<div class="form-content">
+  <%= simple_form_for request do |f| %>
+    <%= f.input :title, label: "Titre de l'annonce" %>
+    <%= f.input :description, label: "Description de l'annonce", hint: "Détaillez votre problème autant que possible pour le faire comprendre à nos experts" %>
+    <div class="form-price-categories">
+      <%= f.association :category, as: :radio_buttons, label: 'Catégorie de la demande', prompt: 'Choisissez une catégorie' %>
+      <%= f.input :price, label: 'Prix en €', input_html: { min: 0, step: 0.5 } %>
+    </div>
+    <%= f.submit 'Valider', class: 'cta-blue w-100' %>
+  <% end %>
+</div>

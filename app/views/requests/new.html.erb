@@ -1,14 +1,4 @@
 <div class="form-container">
   <h1>Créez une annonce pour demander de l'aide à un expert Ailper</h1>
-  <div class="form-content">
-    <%= simple_form_for @request do |f| %>
-      <%= f.input :title, label: "Titre de l'annonce" %>
-      <%= f.input :description, label: "Description de l'annonce", hint: "Détaillez votre problème autant que possible pour le faire comprendre à nos experts" %>
-      <div class="form-price-categories">
-        <%= f.association :category, as: :radio_buttons, label: 'Catégorie de la demande', prompt: 'Choisissez une catégorie' %>
-        <%= f.input :price, label: 'Prix' %>
-      </div>
-      <%= f.submit 'Valider', class: 'cta-blue w-100' %>
-    <% end %>
-  </div>
+  <%= render 'request_form', request: @request %>
 </div>
