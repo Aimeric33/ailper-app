@@ -1,0 +1,30 @@
+.form-container {
+  padding: 40px 300px;
+
+  h1 {
+    color: $blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 200px 24px 200px;
+  }
+}
+
+.form-content {
+  width: 75%;
+  margin: 0 auto 0 auto;
+  padding: 24px 16px;
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: 0 6px 10px rgba($color: $black, $alpha: 0.1);
+
+  label:not(.form-check-label), legend {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
+.form-price-categories {
+  display: flex;
+  justify-content: space-between;
+}
