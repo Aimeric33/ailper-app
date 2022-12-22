@@ -42,3 +42,16 @@
     text-decoration: underline;
   }
 }
+
+.link-blue {
+  display: inline-block;
+  color: $blue;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
