@@ -1,7 +1,7 @@
 .form-container {
   padding: 40px 300px;
 
-  h1 {
+  h1, h2 {
     color: $blue;
     font-size: 1.5rem;
     font-weight: bold;
@@ -40,4 +40,8 @@
     box-shadow: none;
     border-color: $blue;
   }
+}
+
+.form-actions {
+  display: flex;
 }
