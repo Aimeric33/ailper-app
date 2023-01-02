@@ -1,1 +1,4 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# 🔜 Ailper app
+
+With this website, you'll be able to find a tech expert if you have a computer problem or a printer bug for example. If you are a tech expert, you can earn money helping people around you.  
+Ruby on Rails app in progress...
