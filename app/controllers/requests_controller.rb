@@ -19,7 +19,6 @@ class RequestsController < ApplicationController
       category: Category.find(params[:request][:category_ids].to_i),
       request: @request
     )
-
     if @request.save && @request_category.save
       redirect_to request_path(@request)
     else
@@ -47,6 +46,6 @@ class RequestsController < ApplicationController
   end
 
   def request_params
-    params.require(:request).permit(:title, :description, :price)
+    params.require(:request).permit(:title, :description, :price, :category_ids)
   end
 end
