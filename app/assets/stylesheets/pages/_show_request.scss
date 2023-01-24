@@ -1,0 +1,38 @@
+.request-show-container {
+  padding: 40px 200px;
+  display: flex;
+  gap: 40px;
+}
+
+.request-show-content {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .request-show-date {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 24px;
+  }
+
+  .request-show-price {
+    font-size: 1.5rem;
+    color: $blue;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-top: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 24px;
+  }
+}
+
+.request-show-user {
+  padding: 16px 24px;
+  box-shadow: 0 0px 10px rgba($color: $black, $alpha: 0.1);
+  border-radius: $border-radius;
+}

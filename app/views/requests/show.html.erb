@@ -1,1 +1,21 @@
-<h1>Annonce <%= @request.id %></h1>
+<div class="request-show-container">
+  <div class="request-show-content">
+    <h1><%= @request.title %></h1>
+    <p class="request-show-date">Annonce créée le <%= @request.created_at %></p>
+    <p class="request-show-price">Recevez <%= @request.price %>€ minimum en contrepartie de votre aide</p>
+    <h2>Description</h2>
+    <p class="request-show-paragraph"><%= @request.description %></p>
+    <h2>Adresse</h2>
+    <p class="request-show-paragraph"><%= @request.user.address %></p>
+  </div>
+  <div>
+    <div class="request-show-user">
+      <%= image_tag 'https://i.pravatar.cc/40', class: 'avatar-large' %>
+      <p><%= @request.user.first_name %> <%= @request.user.last_name.first %>.</p>
+      <p>Actif depuis le <%= @request.user.created_at %></p>
+      <p><%= @request.user.requests.count %> annonces postées</p>
+      <%= link_to "Envoyer un message", "#", class: "cta-blue w-100" %>
+      <%= link_to "Voir le numéro", "#", class: "cta-white mt-2 w-100" %>
+    </div>
+  </div>
+</div>
